@@ -53,7 +53,10 @@ nuevaPromesaLectura
     );
 
 
-const nuevaPromesaLectura = new Promise(
+///////////////////////////////////////////////////
+
+
+const nuevaPromesaAddFile = new Promise(
     (resolve) => {
         fs.readFile('06-texto23.txt', 'utf-8',
             (err, contenidoArchivo) => {
@@ -67,13 +70,13 @@ const nuevaPromesaLectura = new Promise(
 );
 
 
-const nuevaPromesaADDFILE = (contenidoLeido) => {
+const nuevaPromesaEscritura = (contenidoLeido) => {
     return new Promise(
         (resolve, reject) => {
 
             const contenido = contenidoLeido ? contenidoLeido + 'Otro ola' : 'Otro ola';
 
-            addFile('06-texto24.txt', contenido,
+            fs.writeFile('06-texto23.txt', contenido,
                 (err,) => {
                     if (err) {
                         reject(err);
