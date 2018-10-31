@@ -30,12 +30,12 @@ var miguel={
         "nombre":'Cachetes'
 },
 }; //object
-console.log(miguel.nombre)
+console.log(miguel.nombre);
 console.log('fecha', fecha);
 console.log(typeof fecha);
 
-//Truthy
-//falsy
+//###################################Truthy
+//############################################falsy
 if("") {
     console.log("Si")
 }else{

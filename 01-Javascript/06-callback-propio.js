@@ -144,8 +144,8 @@ ejercicioDeArchivos()
 // 06-callback-propio.js
 
 const fs = require('fs');
-
 let totalArchivo = 'INICIO';
+
 
 function appendFile(nombreArchivo, contenidoArchivo, callback) {
 
@@ -158,8 +158,9 @@ function appendFile(nombreArchivo, contenidoArchivo, callback) {
                             console.error('Error escribiendo');
                             callback(err);
                         } else {
+
                             console.log('Archivo creado');
-                            callback(undefined, contenidoArchivo);
+                            callback(contenidoArchivo, undefined);
                         }
                     }
                 );
@@ -172,8 +173,8 @@ function appendFile(nombreArchivo, contenidoArchivo, callback) {
                             console.error('Error escribiendo');
                             callback(err);
                         } else {
-                            console.log('Archivo creado');
-                            callback(undefined, contenidoArchivoLeido + contenidoArchivo);
+                            console.log('Archivo creado 222');
+                            callback(contenidoArchivoLeido + contenidoArchivo, undefined );
                         }
                     }
                 );
@@ -188,7 +189,7 @@ appendFile('06-texto.txt',
         if (error) {
             console.log('Error', error);
         } else {
-            // contenidoArchivo
+            //console.log (contenidoArchivo);
         }
 
     }
@@ -205,13 +206,11 @@ appendFile('06-texto.txt',
 // [respuesta,respuesta,respuesta,respuesta,respuesta]
 
 function ejercicioDeArchivos(arregloStrings, callback) {
-
     const arregloRespuestas = [];
-
     arregloStrings
         .forEach(
             (string, indice) => {
-                const archivo = `${indice}-${string}.txt`;
+                const archivo = `${indice}-${string}.txt`;//template
                 const contenido = string;
                 fs.writeFile(archivo,
                     contenido,
@@ -251,8 +250,7 @@ function ejercicioDeArchivos(arregloStrings, callback) {
 }
 
 const arregloStrings = ['A', 'B', 'C'];
-
 ejercicioDeArchivos(arregloStrings,
     (arregloRespuestas) => {
-        console.log(arregloRespuestas);
+        console.log("Hola",arregloRespuestas);
     });
