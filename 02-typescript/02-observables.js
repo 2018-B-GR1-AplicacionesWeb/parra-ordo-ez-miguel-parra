@@ -59,7 +59,6 @@ observableDePromesa$
 }
     )
 */
-
 // 02-observables.ts
 // import { PaqueteUno, Paquete dos} from 'rxjs';
 // import * as rxjs from 'rxjs';
@@ -106,7 +105,6 @@ observableDePromesa$
     });
 
 */
-
 const promesita = () => {
     // @ts-ignore
     return new Promise((resolve, reject) => {
@@ -114,15 +112,15 @@ const promesita = () => {
     });
 };
 
-    async function ejecutarCodigoSyncrono() {
-        console.log('Inicio');
-        try{
-            const resultadoPromesita = await promesita();
-            console.log(resultadoPromesita);
-        }catch(e) {
-            console.log('Error en promesita',e)
-        }
+
+async function ejecutarCodigoSyncrono() {
+    console.log('Inicio');
+    try {
+        const resultadoPromesita = await promesita();
+        console.log(resultadoPromesita);
+    }
+    catch (e) {
+        console.log('Error en promesita', e);
+    }
     console.log('Fin');
 }
-
-
