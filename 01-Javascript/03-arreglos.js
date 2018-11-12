@@ -77,7 +77,7 @@ console.log('OBJETO Angel\n', angel);
 
 console.log("UNION DE OBJETOS MIGUEL Y ANGEL MEDIANTE DESTRUCTURACION");
 var datosDelUsuario ={...miguel, ...angel};
-console.log(datosDelUsuario);
+console.log("hola", datosDelUsuario);
 console.log("####### ver atributos de un objeto usando Object.keys ######");
 // saber que tipos de valores tienen las variables
 var atributosDelObjeto= Object.keys(datosDelUsuario);
