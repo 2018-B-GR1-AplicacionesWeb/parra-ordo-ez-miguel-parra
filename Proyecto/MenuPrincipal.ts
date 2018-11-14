@@ -1,9 +1,9 @@
 declare var  require;
 const inquirer = require('inquirer');
 const fs = require ('fs');
-import {listaMenu, preguntasBuscar, preguntasIngresar} from "./recursoPreguntas";
+import {listaMenu, preguntaEliminar, preguntasActualizar, preguntasBuscar, preguntasIngresar} from "./recursoPreguntas";
 declare var Promise : any;
-const arregloJSON= [];
+const arregloAutosJSON= [];
 
 
 function menuAutos() {
@@ -35,17 +35,17 @@ function menuAutos() {
                                         (valorActual, indiceActual)=> {
                                             if(longitudArreglo!==indiceActual) {
                                                 //console.log(JSON.parse(arregloStrings[indiceActual]));
-                                                arregloJSON.push(JSON.parse(arregloStrings[indiceActual]));
+                                                arregloAutosJSON.push(JSON.parse(arregloStrings[indiceActual]));
                                             }
-                                            //arregloJSON.push(JSON.parse(arregloStrings[indiceActual]));
+                                            //arregloAutosJSON.push(JSON.parse(arregloStrings[indiceActual]));
 
                                         }
 
                                     );
-                                   // console.log(arregloJSON);
+                                   // console.log(arregloAutosJSON);
 
 
-                                    arregloJSON.forEach(( valorActual,indiceActual)=>{
+                                    arregloAutosJSON.forEach(( valorActual,indiceActual)=>{
 
                                         if(valorActual.numMotor===datoIngresado.numMotor){
                                             console.log(valorActual)
@@ -53,7 +53,7 @@ function menuAutos() {
 
                                     });
 
-                                  // console.log(arregloJSON);
+                                  // console.log(arregloAutosJSON);
 
                                 })
                         });
@@ -61,12 +61,20 @@ function menuAutos() {
 
 
                 case 'Actualizar':
+                    inquirer.prompt(preguntasActualizar)
+                        .then((datoIngresado)=>{
+
+                        })
 
 
                     break;
 
 
                 case 'Eliminar':
+                    inquirer.prompt(preguntaEliminar)
+                        .then((datoIngresado)=>{
+
+                        })
 
 
                     break;
