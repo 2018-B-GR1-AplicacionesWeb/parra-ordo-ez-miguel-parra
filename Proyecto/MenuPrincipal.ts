@@ -71,36 +71,8 @@ function menuAutos() {
 
                     break;
 
-
-
-
-
-
-
-
             }
 
-
-
-
-
-            /*
-             if (opcionElegida.opciones == 'Eliminar') {
-                 const preguntaParaBorrar = [
-                     {
-                         type: 'input',
-                         name: 'numMotor',
-                         message: 'Ingresa el numero de motor del auto que quieres borrar:'
-                     }];
-                 inquirer
-                     .prompt(preguntaParaBorrar)
-                     .then((respuestaParaBorrar) => {
-                             funcionBorrar(respuestaParaBorrar.numMotor);
-                         }
-                     )
-             }
-         });
-         */
 
             const promesaLectura= new Promise(
                 (resolve, reject)=>{
@@ -147,50 +119,10 @@ function menuAutos() {
 
             }
 
+})
 
 
-
-            const promesaEscritura = (nombreDelArchivo, respuestasDeLasPreguntas) => {
-                fs.writeFile(nombreDelArchivo, respuestasDeLasPreguntas, (error) => {
-                    return new Promise(
-                        (resolve, reject) => {
-                            if (error) {
-                                reject({
-                                    mensaje: 'ERROR DE CREAR ARCHIVO',
-                                })
-                            } else {
-                                resolve({
-                                    mensaje: 'SE CREO EXITOSAMENTE'
-                                })
-                            }
-                        }
-                    )
-                });
-            };
-
-
-            const funcionBorrar = (nombreDelArchivo) => {
-                fs.unlink(nombreDelArchivo, (err) => {
-                    return new Promise(
-                        (resolve, reject) => {
-                            if (err) {
-                                reject({
-                                    mensaje: 'ERROR AL ELIMINAR'
-                                })
-                            } else {
-                                resolve({
-                                    mensaje: 'SE ELIMINO EXITOSAMENTE'
-                                });
-                            }
-                        });
-                });
-            }
-
-
-        })
-
-
-    function arregloAutos(arreglo){
+    /*function arregloAutos(arreglo){
         const arregloAutos=[];
         arreglo.forEach((elemento)=>{
             arregloAutos.push(elemento.numMotor)
@@ -198,7 +130,7 @@ function menuAutos() {
 
         })
 
-    }
+    }*/
 
 }
 menuAutos();
