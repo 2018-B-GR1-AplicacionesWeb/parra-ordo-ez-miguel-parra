@@ -19,6 +19,8 @@ arregloDeNombres.forEach( //Escribir codigo que se entienda
     function (valorActual, indiceActual, arreglo){ //la funcion se ejecuta en cada iteracion del for, los forEach son menos rapidos que el for
 //el primer parametro es el valor actual de esa operacion
         console.log('Valor actual', valorActual)
+
+
         console.log('Indice actual', indiceActual)
         console.log('Arreglo', arreglo)
     }

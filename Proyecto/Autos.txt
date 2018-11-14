@@ -1,0 +1,10 @@
+{"numMotor":"5454","marcaAuto":"Chevrolet","modeloAuto":"Aveo","color":"Cafe","anio":"2017"}
+{"numMotor":"1455","marcaAuto":"Fiat","modeloAuto":"sdfsfd","color":"Blanco","anio":"2018"}
+{"numMotor":"ads","marcaAuto":"Audi","modeloAuto":"adsfadf","color":"Blanco","anio":"2018"}
+{"numMotor":"84787484","marcaAuto":"Audi","modeloAuto":"sdsfewe","color":"Crema","anio":"2017"}
+{"numMotor":"8787","marcaAuto":"Chevrolet","modeloAuto":"dsdf","color":"Plata","anio":"2015"}
+{"numMotor":"555","marcaAuto":"Chevrolet","modeloAuto":"kkii","color":"Gris","anio":"2015"}
+{"numMotor":"878","marcaAuto":"Hyundai","modeloAuto":"Accent","color":"Cafe","anio":"2015"}
+{"numMotor":"15454545","marcaAuto":"Chevrolet","modeloAuto":"Aveo","color":"Negro","anio":"2015"}
+{"numMotor":"17AM45","marcaAuto":"Chevrolet","modeloAuto":"Aveo","color":"Blanco","anio":"2016"}
+{"numMotor":"47qwe32","marcaAuto":"Hyundai","modeloAuto":"Accent","color":"Cafe","anio":"2018"}
