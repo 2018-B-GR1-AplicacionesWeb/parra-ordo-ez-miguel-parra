@@ -15,3 +15,9 @@ exports.preguntasIngresar = [
 exports.preguntasBuscar = [
     { type: 'input', name: 'numMotor', message: 'Ingrese el número de motor del auto a buscar: ' },
 ];
+exports.preguntaEliminar = [
+    { type: 'input', name: 'numMotor', message: 'Ingrese el número de motor del auto a eliminar: ' },
+];
+exports.preguntasActualizar = [
+    { type: 'input', name: 'numMotor', message: 'Ingrese el número de motor del auto a actualizar: ' },
+];

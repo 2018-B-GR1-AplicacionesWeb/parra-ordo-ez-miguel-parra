@@ -6,6 +6,7 @@ declare var Promise : any;
 const arregloAutosJSON= [];
 
 
+
 function menuAutos() {
     console.log("BIENVENIDO A LA CONCESIONARIA");
     const opcionesMenu = [ {type: 'list', name: 'seleccion', message: '¿Qué deseas hacer?', choices: listaMenu},];
@@ -25,48 +26,15 @@ function menuAutos() {
                 case 'Buscar':
                     inquirer.prompt(preguntasBuscar)
                         .then((datoIngresado)=>{
-                            promesaLectura
-                                .then((contenidoDelArchivo)=>{
-
-                                   const arregloStrings=contenidoDelArchivo.split(/\r?\n/);
-                                   const longitudArreglo=arregloStrings.length-1;
-                                   //console.log(longitudArreglo);
-                                    arregloStrings.map(  // Escribir codigo que se entienda
-                                        (valorActual, indiceActual)=> {
-                                            if(longitudArreglo!==indiceActual) {
-                                                //console.log(JSON.parse(arregloStrings[indiceActual]));
-                                                arregloAutosJSON.push(JSON.parse(arregloStrings[indiceActual]));
-                                            }
-                                            //arregloAutosJSON.push(JSON.parse(arregloStrings[indiceActual]));
-
-                                        }
-
-                                    );
-                                   // console.log(arregloAutosJSON);
-
-
-                                    arregloAutosJSON.forEach(( valorActual,indiceActual)=>{
-
-                                        if(valorActual.numMotor===datoIngresado.numMotor){
-                                            console.log(valorActual)
-                                        }
-
-                                    });
-
-                                  // console.log(arregloAutosJSON);
-
-                                })
+                            buscarAuto(datoIngresado);
                         });
                     break;
-
 
                 case 'Actualizar':
                     inquirer.prompt(preguntasActualizar)
                         .then((datoIngresado)=>{
 
-                        })
-
-
+                        });
                     break;
 
 
@@ -74,11 +42,8 @@ function menuAutos() {
                     inquirer.prompt(preguntaEliminar)
                         .then((datoIngresado)=>{
 
-                        })
-
-
+                        });
                     break;
-
             }
 
 
@@ -127,19 +92,44 @@ function menuAutos() {
 
             }
 
-})
+
+            function buscarAuto(autoABuscar){
+                promesaLectura
+                    .then((contenidoDelArchivo)=>{
+                        const arregloAutosString=contenidoDelArchivo.split(/\r?\n/);
+                        const longitudArreglo=arregloAutosString.length-1;
+                        const existeAuto=false;
+                        arregloAutosString.map(
+                            (valorActual, indiceActual)=> {
+                                if(longitudArreglo!==indiceActual) {
+                                    arregloAutosJSON.push(JSON.parse(arregloAutosString[indiceActual]));
+                                }
+                            }
+                        );
+
+
+                        arregloAutosJSON.forEach(( valorActual)=>{
+                            if(valorActual.numMotor===autoABuscar.numMotor){
+                                console.log(valorActual)
+                            }
+                        });
+                    })
+
+                    .catch(
+                        (resultadoError) => {
+                            console.log('Algo malo paso', resultadoError);
+                        }
+                    );
+            }
+        })
 
 
     /*function arregloAutos(arreglo){
         const arregloAutos=[];
         arreglo.forEach((elemento)=>{
             arregloAutos.push(elemento.numMotor)
-
-
         })
-
     }*/
-
 }
 menuAutos();
 

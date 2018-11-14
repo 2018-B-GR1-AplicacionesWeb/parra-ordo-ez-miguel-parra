@@ -6,8 +6,8 @@ const listaAnio=['2018','2017','2016','2015','2014','2013'];
 
 
 
-
 export const preguntaMenu = [ {type: 'list', name: 'seleccion', message: '¿Qué deseas hacer?', choices: listaMenu},];
+
 
 export const preguntasIngresar = [
     {type: 'input', name: 'numMotor', message: 'Ingrese el número de motor: '},
@@ -20,9 +20,14 @@ export const preguntasIngresar = [
 
 export const preguntasBuscar = [
     {type: 'input', name: 'numMotor', message: 'Ingrese el número de motor del auto a buscar: '},
-
 ];
 
+export const preguntaEliminar = [
+    {type: 'input', name: 'numMotor', message: 'Ingrese el número de motor del auto a eliminar: '},
+];
+export const preguntasActualizar = [
+    {type: 'input', name: 'numMotor', message: 'Ingrese el número de motor del auto a actualizar: '},
+];
 
 
 

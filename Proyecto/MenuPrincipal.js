@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const inquirer = require('inquirer');
 const fs = require('fs');
 const recursoPreguntas_1 = require("./recursoPreguntas");
-const arregloJSON = [];
+const arregloAutosJSON = [];
 function menuAutos() {
     console.log("BIENVENIDO A LA CONCESIONARIA");
     const opcionesMenu = [{ type: 'list', name: 'seleccion', message: '¿Qué deseas hacer?', choices: recursoPreguntas_1.listaMenu },];
@@ -20,51 +20,20 @@ function menuAutos() {
             case 'Buscar':
                 inquirer.prompt(recursoPreguntas_1.preguntasBuscar)
                     .then((datoIngresado) => {
-                    promesaLectura
-                        .then((contenidoDelArchivo) => {
-                        const arregloStrings = contenidoDelArchivo.split(/\r?\n/);
-                        const longitudArreglo = arregloStrings.length - 1;
-                        //console.log(longitudArreglo);
-                        arregloStrings.map(// Escribir codigo que se entienda
-                        (valorActual, indiceActual) => {
-                            if (longitudArreglo !== indiceActual) {
-                                //console.log(JSON.parse(arregloStrings[indiceActual]));
-                                arregloJSON.push(JSON.parse(arregloStrings[indiceActual]));
-                            }
-                            //arregloJSON.push(JSON.parse(arregloStrings[indiceActual]));
-                        });
-                        // console.log(arregloJSON);
-                        arregloJSON.forEach((valorActual, indiceActual) => {
-                            if (valorActual.numMotor === datoIngresado.numMotor) {
-                                console.log(valorActual);
-                            }
-                        });
-                        // console.log(arregloJSON);
-                    });
+                    buscarAuto(datoIngresado);
                 });
                 break;
             case 'Actualizar':
+                inquirer.prompt(recursoPreguntas_1.preguntasActualizar)
+                    .then((datoIngresado) => {
+                });
                 break;
             case 'Eliminar':
+                inquirer.prompt(recursoPreguntas_1.preguntaEliminar)
+                    .then((datoIngresado) => {
+                });
                 break;
         }
-        /*
-         if (opcionElegida.opciones == 'Eliminar') {
-             const preguntaParaBorrar = [
-                 {
-                     type: 'input',
-                     name: 'numMotor',
-                     message: 'Ingresa el numero de motor del auto que quieres borrar:'
-                 }];
-             inquirer
-                 .prompt(preguntaParaBorrar)
-                 .then((respuestaParaBorrar) => {
-                         funcionBorrar(respuestaParaBorrar.numMotor);
-                     }
-                 )
-         }
-     });
-     */
         const promesaLectura = new Promise((resolve, reject) => {
             fs.readFile('Autos.txt', 'utf-8', (error, contenidoAutos) => {
                 if (!error) {
@@ -99,44 +68,38 @@ function menuAutos() {
                 console.log('Algo malo paso', resultadoError);
             });
         }
-        const promesaEscritura = (nombreDelArchivo, respuestasDeLasPreguntas) => {
-            fs.writeFile(nombreDelArchivo, respuestasDeLasPreguntas, (error) => {
-                return new Promise((resolve, reject) => {
-                    if (error) {
-                        reject({
-                            mensaje: 'ERROR DE CREAR ARCHIVO',
-                        });
+        function buscarAuto(autoABuscar) {
+            promesaLectura
+                .then((contenidoDelArchivo) => {
+                const arregloStrings = contenidoDelArchivo.split(/\r?\n/);
+                const longitudArreglo = arregloStrings.length - 1;
+                //console.log(longitudArreglo);
+                arregloStrings.map(// Escribir codigo que se entienda
+                (valorActual, indiceActual) => {
+                    if (longitudArreglo !== indiceActual) {
+                        //console.log(JSON.parse(arregloStrings[indiceActual]));
+                        arregloAutosJSON.push(JSON.parse(arregloStrings[indiceActual]));
                     }
-                    else {
-                        resolve({
-                            mensaje: 'SE CREO EXITOSAMENTE'
-                        });
+                    //arregloAutosJSON.push(JSON.parse(arregloStrings[indiceActual]));
+                });
+                // console.log(arregloAutosJSON);
+                arregloAutosJSON.forEach((valorActual, indiceActual) => {
+                    if (valorActual.numMotor === autoABuscar.numMotor) {
+                        console.log(valorActual);
                     }
                 });
+                // console.log(arregloAutosJSON);
             });
-        };
-        const funcionBorrar = (nombreDelArchivo) => {
-            fs.unlink(nombreDelArchivo, (err) => {
-                return new Promise((resolve, reject) => {
-                    if (err) {
-                        reject({
-                            mensaje: 'ERROR AL ELIMINAR'
-                        });
-                    }
-                    else {
-                        resolve({
-                            mensaje: 'SE ELIMINO EXITOSAMENTE'
-                        });
-                    }
-                });
-            });
-        };
+        }
     });
-    function arregloAutos(arreglo) {
-        const arregloAutos = [];
-        arreglo.forEach((elemento) => {
-            arregloAutos.push(elemento.numMotor);
-        });
-    }
+    /*function arregloAutos(arreglo){
+        const arregloAutos=[];
+        arreglo.forEach((elemento)=>{
+            arregloAutos.push(elemento.numMotor)
+
+
+        })
+
+    }*/
 }
 menuAutos();
