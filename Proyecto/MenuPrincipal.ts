@@ -98,7 +98,6 @@ function menuAutos() {
                     .then((contenidoDelArchivo)=>{
                         const arregloAutosString=contenidoDelArchivo.split(/\r?\n/);
                         const longitudArreglo=arregloAutosString.length-1;
-                        const existeAuto=false;
                         arregloAutosString.map(
                             (valorActual, indiceActual)=> {
                                 if(longitudArreglo!==indiceActual) {
@@ -130,6 +129,13 @@ function menuAutos() {
             arregloAutos.push(elemento.numMotor)
         })
     }*/
+
+
+
+    const preguntaEliminar = [
+        {type: 'input', name: 'numMotor', message: 'Ingrese el número de motor del auto a eliminar: '},
+    ];
+
 }
 menuAutos();
 
