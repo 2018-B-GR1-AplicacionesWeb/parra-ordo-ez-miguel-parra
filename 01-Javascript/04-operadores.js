@@ -19,6 +19,8 @@ arregloDeNombres.forEach( //Escribir codigo que se entienda
     function (valorActual, indiceActual, arreglo){ //la funcion se ejecuta en cada iteracion del for, los forEach son menos rapidos que el for
 //el primer parametro es el valor actual de esa operacion
         console.log('Valor actual', valorActual)
+
+
         console.log('Indice actual', indiceActual)
         console.log('Arreglo', arreglo)
     }
@@ -148,9 +150,11 @@ const resultadoSort = arreglosNumros.sort ((a,b) => a-b);
 //consola de javascript , escribir la logica sin meter los archivos de navegador.
 function ejemplo() {
 }
-
 var ejemploDos = function () {
 }; // Anonymous function
+console.log(ejemploDos);
+console.log(ejemplo());
+
 
 var adrian = {
     trabajar: function () {// Anonymous function
@@ -158,10 +162,12 @@ var adrian = {
     }
 };
 
+console.log(adrian.trabajar());
+
+
 var arregloFunciones = [function () {// Anonymous function
-
 }];
-
+console.log(arregloFunciones);
 /* no se pueden usar funciones anonimas sin igualar o enviar como paraemtro
 function(a,b,c){
 }
@@ -176,39 +182,30 @@ let variableDos = 2; // USAR MUTABLE (este se asigna a otro valor)
 variableDos = variableDos + 1;
 const pi = 3.1416;  // INTENTEN USAR CONST SIEMPRE
 
-// operadores
+// ######################################### OPERADORES ##############################
 
 const arregloDeNombres = ['A', 'b', 'C'];
-
-arregloDeNombres[1] = 'B';
-
-arregloDeNombres.push('D');
+arregloDeNombres[1] = 'B'; //Reemplazando
+arregloDeNombres.push('D'); //Agregando al final
 
 // arregloDeNombres = {};
-
 // arregloDeNombres = [];
-
-
 const vicente = {
     nombre: 'Vicente'
 };
-
+console.log(vicente.nombre);
 delete vicente.nombre;
-
+console.log(vicente.nombre);
 const casado = true;
-
-// casado = false; Cambiar booleanos
-
+//casado = false; Cambiar booleanos
 const apellido = '';
-
 // apellido = '123'; Cambiar Strings
-
 const edad = 29;
 // edad = 30; Cambiar Number
-
 const variableNull = null;
-
 // variableNull = 1; Cambiar Null
+
+
 
 vicente.nombre = 'Adrian';
 vicente.edad = 24;
@@ -251,7 +248,9 @@ const arregloNombresDos = ['E', 'F', 'G', 'H'];
 const resultado = arregloDeNombres
     .map( // mutar cada elemento del arreglo
         valorActual => {
+            console.log("ejecutandose");
             return valorActual + '.';
+
         }
     )  // Devolver un ARREGLO
     .forEach(
@@ -304,6 +303,7 @@ const resultadoFind = arregloNumeros
     .find(n => n === 7);
 
 // reduce
+console.log(resultadoFind);
 
 const resultadoReduce = arregloNumeros
     .reduce(
@@ -313,7 +313,7 @@ const resultadoReduce = arregloNumeros
         100  // Acepta un valor
     );
 console.log(resultadoReduce);
-
+//const arregloNumeros = [2, 3, 1, 5, 6, 4, 7, 8, 9, 10];
 const resultadoReduceV2 = arregloNumeros.reduceRight((a, b, indice) => {
     if (indice > 4) {
         return a + b;
@@ -327,7 +327,7 @@ console.log(resultadoReduceV2);
 // SORT
 
 const clonArregloNumeros = JSON.parse(JSON.stringify(arregloNumeros));
-
+console.log(clonArregloNumeros);
 const resultadoSort = arregloNumeros.sort((a, b) => a - b);
 
 const resultadoSortV2 = clonArregloNumeros.sort((a, b) => b - a);
