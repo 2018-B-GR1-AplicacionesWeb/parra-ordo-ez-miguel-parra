@@ -1,0 +1,22 @@
+<h1><%= usuario %></h1>
+<% var vicente = 'Vicente';%>
+<h2><%=vicente%></h2>
+<p>Parrafo asjdhfjysgfdjg</p>
+
+<ul>
+<% arreglo.forEach( (noticia) => {%>
+    <li>
+        <%= noticia.titulo%>
+    -
+        <%= noticia.descripcion%>
+        <form action="/adiosMundo" method="POST">
+            <button type="button">Clickea sin problemas</button>
+            <button >Yo tambien envio informacion</button>
+            <button type="submit">Enviar</button>
+
+
+        </form>
+
+    </li>
+<% })%>
+</ul>
