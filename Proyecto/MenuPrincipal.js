@@ -71,21 +71,24 @@ function menuAutos() {
         function buscarAuto(autoABuscar) {
             promesaLectura
                 .then((contenidoDelArchivo) => {
-                const arregloAutosString = contenidoDelArchivo.split(/\r?\n/);
-                const longitudArreglo = arregloAutosString.length - 1;
-                arregloAutosString.map((valorActual, indiceActual) => {
+                const arregloStrings = contenidoDelArchivo.split(/\r?\n/);
+                const longitudArreglo = arregloStrings.length - 1;
+                //console.log(longitudArreglo);
+                arregloStrings.map(// Escribir codigo que se entienda
+                (valorActual, indiceActual) => {
                     if (longitudArreglo !== indiceActual) {
-                        arregloAutosJSON.push(JSON.parse(arregloAutosString[indiceActual]));
+                        //console.log(JSON.parse(arregloStrings[indiceActual]));
+                        arregloAutosJSON.push(JSON.parse(arregloStrings[indiceActual]));
                     }
+                    //arregloAutosJSON.push(JSON.parse(arregloStrings[indiceActual]));
                 });
-                arregloAutosJSON.forEach((valorActual) => {
+                // console.log(arregloAutosJSON);
+                arregloAutosJSON.forEach((valorActual, indiceActual) => {
                     if (valorActual.numMotor === autoABuscar.numMotor) {
                         console.log(valorActual);
                     }
                 });
-            })
-                .catch((resultadoError) => {
-                console.log('Algo malo paso', resultadoError);
+                // console.log(arregloAutosJSON);
             });
         }
     });
@@ -93,7 +96,13 @@ function menuAutos() {
         const arregloAutos=[];
         arreglo.forEach((elemento)=>{
             arregloAutos.push(elemento.numMotor)
+
+
         })
+
     }*/
 }
 menuAutos();
+
+
+
