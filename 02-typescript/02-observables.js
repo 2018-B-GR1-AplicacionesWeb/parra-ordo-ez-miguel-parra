@@ -59,6 +59,14 @@ observableDePromesa$
 }
     )
 */
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 // 02-observables.ts
 // import { PaqueteUno, Paquete dos} from 'rxjs';
 // import * as rxjs from 'rxjs';
@@ -111,16 +119,16 @@ const promesita = () => {
         reject(':(');
     });
 };
-
-
-async function ejecutarCodigoSyncrono() {
-    console.log('Inicio');
-    try {
-        const resultadoPromesita = await promesita();
-        console.log(resultadoPromesita);
-    }
-    catch (e) {
-        console.log('Error en promesita', e);
-    }
-    console.log('Fin');
+function ejecutarCodigoSyncrono() {
+    return __awaiter(this, void 0, void 0, function* () {
+        console.log('Inicio');
+        try {
+            const resultadoPromesita = yield promesita();
+            console.log(resultadoPromesita);
+        }
+        catch (e) {
+            console.log('Error en promesita', e);
+        }
+        console.log('Fin');
+    });
 }

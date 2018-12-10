@@ -1,3 +1,4 @@
+//import {MergeMapOperator} from "rxjs/internal/operators/mergeMap";
 const inquirer = require('inquirer');
 const fs = require('fs');
 const rxjs = require('rxjs');
@@ -10,6 +11,7 @@ const preguntaMenu = { type: 'list', name: 'opcionMenu', message: 'Elige una opc
 const preguntasBuscar = { type: 'input', name: 'numMotor', message: 'Ingrese el número de motor del auto a buscar: ' };
 const preguntasEliminar = { type: 'input', name: 'numMotor', message: 'Ingrese el número de motor del auto a eliminar: ' };
 const preguntasActualizar = { type: 'input', name: 'numMotor', message: 'Ingrese el número de motor del auto a actualizar: ' };
+const colorCambiar = { type: 'input', name: 'nuevoColor', message: 'Ingrese el nuevo color: ' };
 const preguntasIngresar = [
     { type: 'input', name: 'idMotor', message: 'Ingrese el numero de motor: ' },
     { type: 'list', name: 'marca', message: 'Cual es tu marca del auto: ', choices: listaMarca },
@@ -21,23 +23,8 @@ function main() {
     console.log('################  BIENVENIDO AL CONCENSIONARIO  ###############');
     //vamos a correr primero la funcion iniciaizarBase
     inicializarBase() //$ aqui tenemos un observable
-        .pipe(mergeMap(// ##### 1. PREGUNTAR OPCION #### //concatenamos con otro observable  con las de preguntas
-    //EN este merge map tenemos la respuesta del usuario y de la base
-    (respuestasBDD) => {
-        return preguntarMenu() //recibimos opcion menu, aqui ejecutamos esa funcion
-            .pipe(map((respuesta) => {
-            //ya estamos dentro del observable aqui por lo tanto esto ya es una respuesta normal
-            // el man se lo hizo para mandar un nuevo objeto que va a tener lo que esta en return
-            console.log("Su opcion es ", respuesta);
-            return {
-                respuestaUsuario: respuesta,
-                respuestasBDD: respuestasBDD
-            };
-        }));
-    }), // dependiendo de la opcion PREGUNTAMOS DEPENDIENDO LAS OPCIONES
-    mergeMap(//####DEPENDIENDO DE LA OPCION HACER ALGO (crear, borrar, eliminar)
+        .pipe(preguntarOpciones(), mergeMap(//####DEPENDIENDO DE LA OPCION HACER ALGO (crear, borrar, eliminar)
     (respuesta) => {
-        console.log("Se", respuesta);
         switch (respuesta.respuestaUsuario.opcionMenu) {
             case 'Crear':
                 return rxjs.from(inquirer.prompt(preguntasIngresar))
@@ -65,16 +52,13 @@ function main() {
             case 'Buscar':
                 return rxjs.from(inquirer.prompt(preguntasBuscar))
                     .pipe(map((respuestaIngresada) => {
-                    respuesta.motor = respuestaIngresada.numMotor;
-                    return respuesta;
-                }))
-                    .pipe(map((respuesta) => {
                     const bdd = respuesta.respuestasBDD.bdd.AutosActuales;
                     const autoEncontrado = bdd
                         .find((motorObtenido) => {
-                        return motorObtenido.idMotor === respuesta.motor;
+                        return motorObtenido.idMotor === respuestaIngresada.numMotor;
                     });
-                    return autoEncontrado;
+                    respuesta.Autos = autoEncontrado;
+                    return respuesta;
                 }));
                 break;
             case 'Borrar':
@@ -96,17 +80,35 @@ function main() {
                 }));
                 break;
             case 'Actualizar':
+                return rxjs.from(inquirer.prompt(preguntasActualizar))
+                    .pipe(map((respuestaIngresada) => {
+                    const bdd = respuesta.respuestasBDD.bdd.AutosActuales;
+                    const autoEncontrado = bdd
+                        .find((motorObtenido) => {
+                        return motorObtenido.idMotor === respuestaIngresada.numMotor;
+                    });
+                    const indice = bdd
+                        .findIndex((motorObtenido) => {
+                        return motorObtenido.idMotor === respuestaIngresada.numMotor;
+                    });
+                    respuesta.Autos = autoEncontrado;
+                    respuesta.motor = indice;
+                    //console.log(respuesta.Autos);
+                    return respuesta;
+                }), mergeMap((respuesta) => {
+                    return rxjs.from(inquirer.prompt(colorCambiar))
+                        .pipe(map((respuestaColor) => {
+                        respuesta.Autos.color = respuestaColor.nuevoColor;
+                        //respuesta.respuestasBDD.bdd.AutosActuales.;
+                        const AutoModificado = respuesta.Autos;
+                        // console.log(AutoModificado);
+                        respuesta.respuestasBDD.bdd.AutosActuales[respuesta.motor] = AutoModificado;
+                        return respuesta;
+                    }), map((respuesta) => {
+                        return guardarBase(respuesta.respuestasBDD.bdd);
+                    }));
+                }));
                 break;
-            /* default:
-            respuesta.Autos = {
-                idMotor: null,
-                marca: null,
-                modelo: null,
-                color: null,
-                anio : null,
-            };
-            rxjs.of(respuesta)  //devolviendo la respuesta para agregar al usuario
-            */
         }
     }))
         .subscribe(// el subscribe es como el ultimo paso que dice ya ahora si ejecutate todo
@@ -119,55 +121,8 @@ function main() {
         main();
     });
 }
-/*
-function buscarAuto(numMotor){
-    return new Promise((resolve, reject)=>
-    {
-        fs.readFile('bdd.json','utf-8',
-            (err,contenido)=>{
-                if (err) {
-                    reject({
-                        mensaje:'Error leyendo'
-                    });
-                } else {
-                    const bdd = JSON.parse(contenido);
-                    const indiceMotor=bdd.AutosActuales
-                        .findIndex(
-                            (motor)=>{
-                                return motor.idMotor=numMotor
-                            }
-                        );
-                    resolve(indiceMotor)
-
-                }
-
-            })
-
-
-    })
-}
-*/
-/*
-function buscaraAuto(idMotorRespuesta) { //devuelve una promesa de tipo Respuesta BDD (UN OBJETO)
-return new Promise(
-   (resolve, reject) => {
-       fs.readFile( 'bdd.json', 'utf-8', (error, contenidoLeido) => {
-           if (error) {
-               reject({
-                   mensaje: "Error al leer la BDD",
-                   error: 500
-               });
-           } else {
-               const arregloAutos=JSON.parse(contenidoLeido);
-               const respuestaFind=arregloAutos.AutosActuales
-                   .find(
-                       (auto)=> {
-                           console.log(auto+"Hola");
-                           return auto.idMotor === idMotorRespuesta;
-                       });
-               resolve (respuestaFind);
-           } } ); } );
-}*/
+/***************************************************************/
+/*************************************************************/
 function inicializarBase() {
     const leerBDD$ = rxjs.from(leerBDD()); //1. creamos un observable para leer la base de datos usando promesa leeRBDD()
     return leerBDD$
@@ -220,6 +175,25 @@ function crearBDD() {
             }
         });
     });
+}
+/***********************************************************************/
+///////////////////////////// OPCIONES MAIN ////////////////////////
+/**********************************************************************/
+function preguntarOpciones() {
+    return mergeMap(// ##### 1. PREGUNTAR OPCION #### //concatenamos con otro observable  con las de preguntas
+    //EN este merge map tenemos la respuesta del usuario y de la base
+    (respuestasBDD) => {
+        return preguntarMenu() //recibimos opcion menu, aqui ejecutamos esa funcion
+            .pipe(map((respuesta) => {
+            //ya estamos dentro del observable aqui por lo tanto esto ya es una respuesta normal
+            // el man se lo hizo para mandar un nuevo objeto que va a tener lo que esta en return
+            //console.log("Su opcion es ", respuesta);
+            return {
+                respuestaUsuario: respuesta,
+                respuestasBDD: respuestasBDD
+            };
+        }));
+    }); // dependiendo de la opcion PREGUNTAMOS DEPENDIENDO LAS OPCIONES
 }
 function preguntarMenu() {
     return rxjs.from(inquirer.prompt(preguntaMenu)); //transformando en observable la respuesta de lo que haya escogido

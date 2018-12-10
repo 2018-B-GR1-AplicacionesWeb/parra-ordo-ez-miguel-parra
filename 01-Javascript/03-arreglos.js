@@ -1,6 +1,7 @@
 var arreglo = [];
-
-arreglo = [1, "Miguel", false, null, new Date(), { nombre: "Angel"}, [1,2,false,true]];
+arreglo.push(8);
+console.log(arreglo);
+arreglo = [1, "Miguel", false, null, new Date(), { nombre: "Angel", edad: 85}, [1,2,false,true]];
 console.log(arreglo);
 console.log("aqui estoy aplicando un push");
 arreglo.push (4); //coloca al final el 3
@@ -10,6 +11,9 @@ arreglo.pop();
 console.log(arreglo);
 console.log("aqui termine con el primer ejemplo");
 console.log("#############################################\n");
+
+
+
 
 var arregloNumeros= [1,2,3,4,5];
 console.log(arregloNumeros);
@@ -69,7 +73,7 @@ var miguel = {
 console.log('OBJETO 1\n', miguel);
 var angel= {
     mascota:{
-        nombre: "Mili"
+        nombre: "Miliaaaa"
 },
 fechaNacimiento: new Date('1995-01-22')
 };

@@ -295,15 +295,13 @@ const resultadoFindIndex = arregloNumeros
     .findIndex(n => n === 7);
 
 console.log(resultadoFindIndex);
-console.log(arregloNumeros.indexOf(7));
+console.log(arregloNumeros.indexOf(7)+"hfdbjggnfjgggggggggggggggggggggggggggggggggggggggggggggggggggkngkjdnkjgfnkgjfnk");
+
 
 // find
 
-const resultadoFind = arregloNumeros
-    .find(n => n === 7);
-
 // reduce
-console.log(resultadoFind);
+console.log(resultadoFind+"hfdbjggnfjgggggggggggggggggggggggggggggggggggggggggggggggggggkngkjdnkjgfnkgjfnk");
 
 const resultadoReduce = arregloNumeros
     .reduce(
