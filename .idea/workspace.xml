@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a51a9d8-2856-43ca-a702-c0b60a786990" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/03-http/videos/src/noticia.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-http/videos/views/crear-noticia.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-iib/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-iib/views/crearAuto.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-iib/views/inicio.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03-http/videos/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/03-http/videos/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-http/videos/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/03-http/videos/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-http/videos/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/03-http/videos/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-http/videos/views/inicio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/03-http/videos/views/inicio.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deber-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deber-http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deber-http/bdd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deber-http/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deber-http/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deber-http/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deber-http/src/app.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03-http/videos/views/inicio.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="559">
+              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -62,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/03-http/videos/src/app.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1924">
-              <caret line="200" column="33" lean-forward="true" selection-end-line="272" />
+            <state relative-caret-position="458">
+              <caret line="268" column="58" selection-start-line="268" selection-start-column="58" selection-end-line="268" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -191,8 +178,8 @@
         <option value="$PROJECT_DIR$/03-http/videos/src/main.ts" />
         <option value="$PROJECT_DIR$/03-http/videos/src/noticia.service.ts" />
         <option value="$PROJECT_DIR$/03-http/videos/views/crear-noticia.ejs" />
-        <option value="$PROJECT_DIR$/03-http/videos/src/app.controller.ts" />
         <option value="$PROJECT_DIR$/03-http/videos/views/inicio.ejs" />
+        <option value="$PROJECT_DIR$/03-http/videos/src/app.controller.ts" />
       </list>
     </option>
   </component>
@@ -202,7 +189,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="846" />
     <option name="width" value="1083" />
     <option name="height" value="1038" />
@@ -395,12 +382,12 @@
       <workItem from="1544922095131" duration="15539000" />
       <workItem from="1545046256092" duration="126000" />
       <workItem from="1545046403998" duration="1984000" />
-      <workItem from="1545055604829" duration="5336000" />
+      <workItem from="1545055604829" duration="6117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="414202000" />
+    <option name="totallyTimeSpent" value="414983000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,9 +399,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="677" y="0" width="866" height="830" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27141133" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.80755395" weight="0.44842407" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4987715" weight="0.32894737" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.79131484" weight="0.39880952" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20868516" side_tool="true" weight="0.39880952" />
+      <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.49899194" weight="0.3338214" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" order="12" visible="true" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27141133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -429,27 +437,6 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.79131484" visible="true" weight="0.39880952" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20868516" side_tool="true" visible="true" weight="0.39880952" />
-      <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.49899194" weight="0.3338214" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="12" visible="true" weight="0.329429" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2753978" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.80755395" weight="0.44842407" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4987715" weight="0.32894737" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.79361176" visible="true" weight="0.1416309" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2063882" side_tool="true" weight="0.4488304" />
       <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.49899194" weight="0.3338214" />
       <window_info active="true" anchor="bottom" id="Inspection Results" order="12" visible="true" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -799,15 +786,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/03-http/videos/views/inicio.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="559">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/03-http/videos/src/app.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1924">
-          <caret line="200" column="33" lean-forward="true" selection-end-line="272" />
+        <state relative-caret-position="458">
+          <caret line="268" column="58" selection-start-line="268" selection-start-column="58" selection-end-line="268" selection-end-column="58" />
         </state>
       </provider>
     </entry>

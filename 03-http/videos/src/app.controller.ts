@@ -175,6 +175,10 @@ export class AppController {
             switch (accion) {
                 case 'borrar':
                     mensaje = `Registro ${titulo} eliminado`;
+                case 'crear':
+                    mensaje = `Registro ${titulo} creado`;
+                case 'actualizar':
+                    mensaje = `Registro ${titulo} actualizado`;
             }
         }
 
@@ -219,7 +223,7 @@ export class AppController {
         @Res() response,
         @Body() noticia: Noticia
     ) {
-        this._noticiaService.crear(noticia);
+
 
         response.redirect(
             '/inicio'
@@ -253,10 +257,16 @@ export class AppController {
         @Param('idNoticia') idNoticia: string,
         @Body() noticia: Noticia
     ) {
+        let noticiaActualizada= this._noticiaService.crear(noticia);
         noticia.id = +idNoticia;
         this._noticiaService.actualizar(+idNoticia, noticia);
 
-        response.redirect('/inicio');
+
+        const parametrosConsulta = `?accion=borrar&titulo=${
+            noticiaActualizada.titulo
+            }`;
+
+        response.redirect('/inicio' + parametrosConsulta);
 
     }
 
