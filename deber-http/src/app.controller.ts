@@ -17,7 +17,8 @@ export class AppController {
     console.log(marca);
     // const bdd = this._appService.inicializarBase();
     const aMarca = this._appService.crearMarca(marca);
-    const respuesta$ = of(JSON.stringify(marca));
+    // const respuesta$ = of(JSON.stringify(marca));
+    //console.log(aMarca);
     return (aMarca);
   }
 }
@@ -34,5 +35,5 @@ export interface Marca{
   idMarca: number;
   nombre: string;
   pais: string;
-  fechaFundacion: Date;
+  fechaFundacion: string;
 }

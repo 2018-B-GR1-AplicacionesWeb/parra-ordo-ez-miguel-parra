@@ -26,7 +26,7 @@ export class AppService {
         }));
   }
 
-  leerBDD(){
+  leerBDD(): Promise <RespuestaBDD> {
     return new Promise(
       (resolve) => {
         fs.readFile( 'bdd.json', 'utf-8', (error, contenidoLeido) => {
@@ -41,34 +41,34 @@ export class AppService {
           } }); },
     );
   }
+
+
   crearMarca(marca: Marca){
-    this.inicializarBase()
+    /*console.log(' ####################################################### ');
+    return marca;*/
+    (this.inicializarBase())
       .pipe(
         map(
           (respuesta: RespuestaBDD) => {
-            respuesta.bdd.MarcasActuales.push(marca)
+            respuesta.bdd.MarcasActuales.push(marca);
             return respuesta;
           },
         ),
         mergeMap(
           (respuesta: RespuestaBDD) => {
-            return this.guardarBase(respuesta);
-          } ));
+            return this.guardarBase(respuesta.bdd);
+          } ))
+  .subscribe(
+      (mensaje) => {
+        console.log(mensaje);
+      },
+      (error) => {
+        console.log(error);
+      }, () => {
+        console.log('Completado');
+      },
+    );
   }
-  guardarBase(bdd: BaseDeDatos) { // bdd de tipo base de datos
-    return new Promise((resolve, reject) => {
-      fs.writeFile(
-        'bdd.json',  JSON.stringify(bdd),  (err) => {
-          if (err) {
-            reject({
-              mensaje: 'Error guardando BDD',
-              error: 500,
-            });
-          } else {
-            resolve({
-              mensaje: 'Cambio realizados satisfactoriamente',
-            });
-          } } ); } ); }
   crearBDD() {
     const contenidoInicialBDD = '{"MarcasActuales":[],"AutosActuales":[]}';
     return new Promise(
@@ -84,15 +84,26 @@ export class AppService {
             });
           } } ); } ); }
 
+  guardarBase(bdd: BaseDeDatos) { // bdd de tipo base de datos
+    return new Promise((resolve, reject) => {
+      fs.writeFile(
+        'bdd.json',  JSON.stringify(bdd),  (err) => {
+          if (err) {
+            reject({
+              mensaje: 'Error guardando BDD',
+              error: 500,
+            });
+          } else {
+            resolve({
+              mensaje: 'Cambio realizados satisfactoriamente',
+            });
+          } } ); } ); }
+
 }
-
-
-
 interface BaseDeDatos {
   MarcasActuales: Marca[];
   AutosActuales: Auto[];
 }
-
 interface RespuestaBDD {
   bdd: BaseDeDatos;
 }

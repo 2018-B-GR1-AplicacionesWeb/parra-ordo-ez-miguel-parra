@@ -2,45 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a51a9d8-2856-43ca-a702-c0b60a786990" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/03-http/videos/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-http/videos/views/inicio.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-http/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-http/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-http/.idea/deber-http.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-http/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-http/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-http/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-http/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-http/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deber-http/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-Javascript/03-arreglos.js" beforeDir="false" afterPath="$PROJECT_DIR$/01-Javascript/03-arreglos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-Javascript/04-operadores.js" beforeDir="false" afterPath="$PROJECT_DIR$/01-Javascript/04-operadores.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-typescript/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/02-typescript/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-typescript/02-observables.js" beforeDir="false" afterPath="$PROJECT_DIR$/02-typescript/02-observables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutosProyecto/Autos.js" beforeDir="false" afterPath="$PROJECT_DIR$/AutosProyecto/Autos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutosProyecto/Autos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AutosProyecto/Autos.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutosProyecto/bdd.json" beforeDir="false" afterPath="$PROJECT_DIR$/AutosProyecto/bdd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proyecto/Autos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto/Autos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proyecto/MenuPrincipal.js" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto/MenuPrincipal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoIng/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoIng/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/nest-cli.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/nodemon-debug.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/nodemon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/src/app.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/src/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/src/app.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/test/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/test/jest-e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/tslint.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/03-http/videos/src/noticia.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03-http/videos/views/crear-noticia.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deber-iib/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deber-iib/views/crearAuto.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deber-iib/views/inicio.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-http/videos/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/03-http/videos/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-http/videos/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/03-http/videos/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-http/videos/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/03-http/videos/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-http/videos/views/inicio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/03-http/videos/views/inicio.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deber-http/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deber-http/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deber-http/bdd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deber-http/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deber-http/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deber-http/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deber-http/src/app.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,31 +29,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AutosProyecto/bdd.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="82" selection-start-column="82" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/03-http/videos/src/app.controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1534">
-              <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#197#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03-http/videos/views/inicio.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+            <state relative-caret-position="390">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -86,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03-http/videos/src/main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+            <state relative-caret-position="142">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
                 <element signature="e#219#265#0" expanded="true" />
@@ -97,19 +51,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AutosProyecto/Autos.ts">
+        <entry file="file://$PROJECT_DIR$/03-http/videos/views/crear-noticia.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1668">
-              <caret line="256" column="27" selection-start-line="256" selection-start-column="27" selection-end-line="256" selection-end-column="27" />
+            <state>
+              <caret selection-end-line="3" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Proyecto/MenuPrincipal.ts">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/03-http/videos/src/app.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2856">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="1924">
+              <caret line="200" column="33" lean-forward="true" selection-end-line="272" />
             </state>
           </provider>
         </entry>
@@ -117,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03-http/videos/src/app.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="257">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
@@ -127,10 +81,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProyectoIng/main.ts">
+        <entry file="file://$PROJECT_DIR$/03-http/videos/src/noticia.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="240" column="58" selection-start-line="240" selection-start-column="58" selection-end-line="240" selection-end-column="58" />
+            <state relative-caret-position="93">
+              <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,9 +104,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>id</find>
-      <find>marca</find>
-      <find>nombre</find>
       <find>preguntaUsuario</find>
       <find>RespuestaBDD</find>
       <find>preguntarMenu</find>
@@ -177,6 +131,9 @@
       <find>some</find>
       <find>string</find>
       <find>stringify</find>
+      <find>httpserver</find>
+      <find>redirect</find>
+      <find>switch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,10 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/videos/package.json" />
-        <option value="$PROJECT_DIR$/Proyecto/crearAutos.ts" />
-        <option value="$PROJECT_DIR$/Proyecto/paqueteRecursos.ts" />
-        <option value="$PROJECT_DIR$/Proyecto/.gitignore" />
         <option value="$PROJECT_DIR$/Proyecto/Pruebas.ts" />
         <option value="$PROJECT_DIR$/Proyecto/listasProyecto.ts" />
         <option value="$PROJECT_DIR$/Proyecto/pruebas2.ts" />
@@ -232,8 +185,12 @@
         <option value="$PROJECT_DIR$/deber-http/src/main.ts" />
         <option value="$PROJECT_DIR$/deber-http/src/app.controller.ts" />
         <option value="$PROJECT_DIR$/03-http/videos/src/app.service.ts" />
+        <option value="$PROJECT_DIR$/03-http/videos/src/noticia.service" />
+        <option value="$PROJECT_DIR$/03-http/videos/src/app.module.ts" />
         <option value="$PROJECT_DIR$/deber-http/src/app.service.ts" />
         <option value="$PROJECT_DIR$/03-http/videos/src/main.ts" />
+        <option value="$PROJECT_DIR$/03-http/videos/src/noticia.service.ts" />
+        <option value="$PROJECT_DIR$/03-http/videos/views/crear-noticia.ejs" />
         <option value="$PROJECT_DIR$/03-http/videos/src/app.controller.ts" />
         <option value="$PROJECT_DIR$/03-http/videos/views/inicio.ejs" />
       </list>
@@ -245,10 +202,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-9" />
-    <option name="width" value="1325" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="846" />
+    <option name="width" value="1083" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -285,6 +242,29 @@
             <path>
               <item name="parra-ordo-ez-miguel-parra" type="b2602c69:ProjectViewProjectNode" />
               <item name="parra-ordo-ez-miguel-parra" type="462c0819:PsiDirectoryNode" />
+              <item name="03-http" type="462c0819:PsiDirectoryNode" />
+              <item name="videos" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parra-ordo-ez-miguel-parra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parra-ordo-ez-miguel-parra" type="462c0819:PsiDirectoryNode" />
+              <item name="AutosProyecto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parra-ordo-ez-miguel-parra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parra-ordo-ez-miguel-parra" type="462c0819:PsiDirectoryNode" />
+              <item name="deber-http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parra-ordo-ez-miguel-parra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parra-ordo-ez-miguel-parra" type="462c0819:PsiDirectoryNode" />
+              <item name="deber-http" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parra-ordo-ez-miguel-parra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parra-ordo-ez-miguel-parra" type="462c0819:PsiDirectoryNode" />
               <item name="ProyectoIng" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -296,9 +276,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.12.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/deber-http" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deber-iib" />
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
-    <property name="ts.external.directory.path" value="C:\Users\miguel.parra\Documents\GitHub\parra-ordo-ez-miguel-parra\03-http\videos\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\miguel.parra\Documents\GitHub\parra-ordo-ez-miguel-parra\deber-http\node_modules\typescript\lib" />
     <property name="ts.rename.search.for.js.occurrences" value="false" />
   </component>
   <component name="RunDashboard">
@@ -406,11 +386,21 @@
       <workItem from="1544310984380" duration="3372000" />
       <workItem from="1544364089515" duration="33199000" />
       <workItem from="1544440141397" duration="12296000" />
+      <workItem from="1544503277578" duration="743000" />
+      <workItem from="1544542866640" duration="1155000" />
+      <workItem from="1544574375581" duration="3368000" />
+      <workItem from="1544622704555" duration="726000" />
+      <workItem from="1544623772851" duration="6368000" />
+      <workItem from="1544700714286" duration="3932000" />
+      <workItem from="1544922095131" duration="15539000" />
+      <workItem from="1545046256092" duration="126000" />
+      <workItem from="1545046403998" duration="1984000" />
+      <workItem from="1545055604829" duration="5336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="374925000" />
+    <option name="totallyTimeSpent" value="414202000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,9 +412,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="1059" height="830" extended-state="0" />
+    <frame x="677" y="0" width="866" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35322896" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27141133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -436,8 +427,8 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4987715" weight="0.32894737" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.79361176" visible="true" weight="0.19340974" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2063882" side_tool="true" weight="0.4488304" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.79131484" visible="true" weight="0.39880952" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20868516" side_tool="true" visible="true" weight="0.39880952" />
       <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.49899194" weight="0.3338214" />
       <window_info active="true" anchor="bottom" id="Inspection Results" order="12" visible="true" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -445,7 +436,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23273657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2753978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -457,7 +448,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4987715" weight="0.32894737" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.79361176" visible="true" weight="0.3782235" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.79361176" visible="true" weight="0.1416309" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2063882" side_tool="true" weight="0.4488304" />
       <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.49899194" weight="0.3338214" />
       <window_info active="true" anchor="bottom" id="Inspection Results" order="12" visible="true" weight="0.329429" />
@@ -487,64 +478,15 @@
           <line>109</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/deber-http/src/app.service.ts</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Proyecto/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutosProyecto/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Proyecto/MenuPrincipal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2782">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Proyecto/Autos.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProyectoIng/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutosProyecto/node_modules/rxjs/internal/util/subscribeTo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutosProyecto/node_modules/rxjs/internal/util/subscribeToPromise.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProyectoIng/bdd.json" />
-    <entry file="file://$PROJECT_DIR$/videos/test/app.e2e-spec.ts" />
     <entry file="file://$PROJECT_DIR$/videos/src/app.service.ts" />
     <entry file="file://$PROJECT_DIR$/videos/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/videos/package.json" />
@@ -702,38 +644,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deber-http/src/app.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutosProyecto/bdd.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="82" selection-start-column="82" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deber-http/src/app.controller.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deber-http/src/app.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -747,9 +662,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AutosProyecto/Autos.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6656">
+          <caret line="256" column="27" selection-start-line="256" selection-start-column="27" selection-end-line="256" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Proyecto/MenuPrincipal.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deber-iib/src/app.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deber-iib/src/app.service.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deber-iib/src/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deber-iib/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deber-iib/views/inicio.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deber-http/bdd.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutosProyecto/bdd.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deber-http/src/app.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deber-http/src/app.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-http/videos/src/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deber-iib/views/crearAuto.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProyectoIng/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="115" column="9" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/03-http/videos/src/app.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="257">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
@@ -757,31 +769,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Proyecto/MenuPrincipal.ts">
+    <entry file="file://$PROJECT_DIR$/03-http/videos/src/noticia.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2856">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProyectoIng/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="240" column="58" selection-start-line="240" selection-start-column="58" selection-end-line="240" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutosProyecto/Autos.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1668">
-          <caret line="256" column="27" selection-start-line="256" selection-start-column="27" selection-end-line="256" selection-end-column="27" />
+        <state relative-caret-position="93">
+          <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/03-http/videos/src/main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+        <state relative-caret-position="142">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
             <element signature="e#219#265#0" expanded="true" />
@@ -789,20 +790,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/03-http/videos/views/crear-noticia.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/03-http/videos/views/inicio.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        <state relative-caret-position="390">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/03-http/videos/src/app.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1534">
-          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#197#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1924">
+          <caret line="200" column="33" lean-forward="true" selection-end-line="272" />
         </state>
       </provider>
     </entry>
