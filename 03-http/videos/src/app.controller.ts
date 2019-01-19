@@ -8,11 +8,13 @@ import {
     Query,
     Param,
     Body,
-    UnauthorizedException, Req, Res,
+    UnauthorizedException, Req, Res, Session,
 } from '@nestjs/common';
 import { AppService } from './app.service';
 import {Observable, of} from "rxjs";
-import {NoticiaService} from "./noticia.service";
+import {NoticiaService} from "./noticia/noticia.service";
+import {UsuarioEntity} from "./Usuario/usuario.entity";
+import {UsuarioService} from "./Usuario/usuario.service";
 
 
 @Controller() //decoradores
@@ -46,7 +48,9 @@ export class AppController {
     //http://localhost:3000
     //public servicio:AppService;
     constructor(private readonly _appService: AppService,
-                private readonly _noticiaService: NoticiaService) { // NO ES UN CONSTRUCTOR NORMAL, solo es para importar servicios
+                private readonly _noticiaService: NoticiaService,
+                private readonly _usuarioService: UsuarioService) { // NO ES UN CONSTRUCTOR NORMAL, solo es para importar servicios
+
         //this.servicio = servicio;
     }
 
@@ -194,12 +198,12 @@ export class AppController {
     }
 
     @Post('eliminar/:idNoticia')
-    eliminar(
+    async eliminar(
         @Res() response,
         @Param('idNoticia') idNoticia: string,
     ) {
 
-        const noticiaBorrada = this._noticiaService
+        const noticiaBorrada = await this._noticiaService
             .eliminar(Number(idNoticia));
 
         const parametrosConsulta = `?accion=borrar&titulo=${
@@ -219,10 +223,18 @@ export class AppController {
     }
 
     @Post('crear-noticia')
-    crearNoticiaFuncion(
+    async crearNoticiaFuncion(
         @Res() response,
         @Body() noticia: Noticia
     ) {
+
+        const noticiaCreada = await this._noticiaService.crear(noticia);
+        const parametrosConsulta = `?accion=crear&titulo=${
+            noticiaCreada.titulo
+            }`;
+
+        response.redirect('/inicio' + parametrosConsulta)
+
 
 
         response.redirect(
@@ -230,6 +242,43 @@ export class AppController {
         )
     }
 
+    //app.controller.ts
+    @Get('login')
+    mostrarLogin(
+        @Res() res
+    ){
+        res.redirect('login')
+    }
+
+    @Post('login')
+    @HttpCode(200)
+   async ejecutarLogin(
+        @Body('username') username:string,
+        @Body('password') password:string,
+        @Res () res,
+        @Session() sesion,
+    ){
+        const respuesta= await this._usuarioService
+            .autenticar(username, password);
+        console.log(sesion);
+        if (respuesta){
+            sesion.usuario=username;
+            res.send('ok');
+        }else{
+            res.redirect('login')
+        }
+    }
+
+    @Get('logot')
+    logout(
+        @Res() res,
+        @Session() sesion,
+    ){
+        sesion.username = undefined;
+        sesion.destroy();
+        res.redirect('login')
+    }
+/*
     @Get('actualizar-noticia/:idNoticia')
     actualizarNoticiaVista(
         @Res() response,
@@ -257,10 +306,9 @@ export class AppController {
         @Param('idNoticia') idNoticia: string,
         @Body() noticia: Noticia
     ) {
-        let noticiaActualizada= this._noticiaService.crear(noticia);
-        noticia.id = +idNoticia;
-        this._noticiaService.actualizar(+idNoticia, noticia);
 
+        noticia.id = +idNoticia;
+       let  noticiaActualizada =this._noticiaService.actualizar(+idNoticia, noticia);
 
         const parametrosConsulta = `?accion=borrar&titulo=${
             noticiaActualizada.titulo
@@ -269,7 +317,7 @@ export class AppController {
         response.redirect('/inicio' + parametrosConsulta);
 
     }
-
+*/
 }
 
 
