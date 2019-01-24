@@ -49,15 +49,15 @@ export class NoticiaService {
             .create(noticia); //este no devuelve una promesa
 
         // Metodo Save guarda en la base
-        return  this._noticiaRepository.save(noticiaEntity) //necesitamos enviar una noriciaEntity
+        return  this._noticiaRepository.save(noticiaEntity); // necesitamos enviar una noriciaEntity
 
     }
 
     eliminar(idNoticia: number): Promise<NoticiaEntity>{
 
-       const noticiaAEliminar:NoticiaEntity = this._noticiaRepository
+        const noticiaAEliminar: NoticiaEntity = this._noticiaRepository
             .create({
-                id: idNoticia
+                id: idNoticia,
             });
 
         return this._noticiaRepository.remove(noticiaAEliminar);

@@ -1,0 +1,46 @@
+<% const estaCreando = typeof auto=== "undefined"%>
+
+<h1><%= estaCreando? 'Crear':'Actualizar'%> auto</h1>
+
+<p><%= estaCreando? 'Crea':'Actualiza '%> un auto</p>
+
+<form action="/auto/<%= estaCreando? 'crear':'actualizar'%>-auto/<%=estaCreando? '':auto.id %>"
+    method="POST">
+    <div>
+        <label for="marca">Marca</label>
+        <input id="marca" name="marca" type="text"
+        value="<%= estaCreando ? '': auto.marca%>"
+        >
+    </div>
+    <br>
+    <div>
+        <label for="modelo">Modelo</label>
+        <input id="modelo" name="modelo" type="text"
+        value="<%= estaCreando ? '': auto.modelo%>">
+    </div>
+    <br>
+    <div>
+        <label for="color">Color</label>
+        <input id="color" name="color" type="text"
+               value="<%= estaCreando ? '': auto.color%>">
+    </div>
+    <br>
+    <div>
+        <label for="anio">Año</label>
+        <input id="anio" name="anio" type="text"
+               value="<%= estaCreando ? '': auto.anio%>">
+    </div>
+    <br>
+    <div>
+        <label for="puertas">Puertas</label>
+        <input id="puertas" name="puertas" type="number"
+               value="<%= estaCreando ? '': auto.puertas%>">
+    </div>
+    <br><br>
+
+    <button><%=estaCreando? 'Crear':'Actualizar'%> auto</button>
+</form>
+
+<a href="/auto/inicio-auto">
+    <button>Regresar</button>
+</a>

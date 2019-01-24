@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad93daaf-7fc5-4356-b1ac-76262ca7692e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/CSS/estilos-generales.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-http/videos/src/noticia/dto/create.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Auto/auto.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Auto/auto.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Auto/auto.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Auto/auto.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Usuario/usuario.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Usuario/usuario.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Usuario/usuario.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Usuario/usuario.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Venta/venta.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Venta/venta.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Venta/venta.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/src/Venta/venta.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/views/crear-auto.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/views/crear-usuario.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/views/inicio-auto.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/views/inicio-usuario.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/views/inicio-venta.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deber-autos-crud/views/login.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publico/css/css-general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/bootstrap-4.2.1-dist/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/publico/sistema-grillas.html" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/publico/sistema-grillas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/src/noticia/noticia.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/src/noticia/noticia.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/src/noticia/noticia.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/src/noticia/noticia.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/src/pagina/pagina.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/src/pagina/pagina.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/views/crear-noticia.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/views/crear_noticia.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-http/videos/views/inicio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../03-http/videos/views/inicio.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publico/Supermaxi.html" beforeDir="false" afterPath="$PROJECT_DIR$/publico/Dilipa.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-26">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-26">
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/publico/Dilipa.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/publico/css/css-general.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/publico/css/css-general.css" />
+        <option value="$PROJECT_DIR$/publico/Dilipa.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1179" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="deber-responsive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deber-responsive" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deber-responsive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deber-responsive" type="462c0819:PsiDirectoryNode" />
+              <item name="publico" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deber-responsive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deber-responsive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../03-http" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="C:\Users\miguel.parra\Documents\GitHub\parra-ordo-ez-miguel-parra\deber-responsive\node_modules\tslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\miguel.parra\Documents\GitHub\parra-ordo-ez-miguel-parra\deber-responsive\node_modules\prettier" />
+    <property name="ts.external.directory.path" value="C:\Users\miguel.parra\Documents\GitHub\parra-ordo-ez-miguel-parra\deber-responsive\node_modules\typescript\lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad93daaf-7fc5-4356-b1ac-76262ca7692e" name="Default Changelist" comment="" />
+      <created>1548251412961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548251412961</updated>
+      <workItem from="1548251414424" duration="1522000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1522000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="0" width="943" height="830" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29359823" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32886904" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publico/css/css-general.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publico/Dilipa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

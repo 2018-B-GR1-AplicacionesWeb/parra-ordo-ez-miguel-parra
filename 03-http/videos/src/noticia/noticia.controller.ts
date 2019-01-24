@@ -1,16 +1,18 @@
 // noticia.controller.ts
 
 import {Body, Controller, Get, Param, Post, Query, Res} from "@nestjs/common";
-import {Noticia} from "../app.controller";
+import {Noticia} from '../app.controller';
 import {NoticiaService} from "./noticia.service";
 import {NoticiaEntity} from "./noticia-entity";
 import {FindManyOptions, Like} from "typeorm";
+import {CreateNoticiaDto} from "./dto/create.dto";
+import {validate, ValidationError} from "class-validator";
 
-@Controller('noticia') //parametro para empezar la ruta
+@Controller('noticia') // parametro para empezar la ruta
 export class NoticiaController{
 
     constructor(private readonly _noticiaService: NoticiaService) { // NO ES UN CONSTRUCTOR NORMAL, solo es para importar servicios
-        //this.servicio = servicio;
+        // this.servicio = servicio;
     }
 
     @Get('inicio')
@@ -18,31 +20,42 @@ export class NoticiaController{
         @Res() response,
         @Query('busqueda') busqueda: string,
         @Query('accion') accion: string,
-        @Query('titulo') titulo: string
+        @Query('titulo') titulo: string,
     ) {
 
         let mensaje = undefined;
+        let clase = undefined;
 
         if (accion && titulo) {
             switch (accion) {
                 case 'borrar':
                     mensaje = `Registro ${titulo} eliminado`;
+                    clase = 'alert alert-danger';
+                    break;
+                case 'actualizar':
+                    mensaje = `Registro ${titulo} actualizado`;
+                    clase = 'alert alert-info';
+                    break;
+                case 'crear':
+                    mensaje = `Registro ${titulo} creado`;
+                    clase = 'alert alert-success';
+                    break;
             }
         }
 
         let noticias: NoticiaEntity[];
 
-        if(busqueda){
+        if (busqueda){
 
-            const consulta:FindManyOptions<NoticiaEntity> = {
+            const consulta: FindManyOptions <NoticiaEntity> = {
                 where: [
                     {
-                    titulo: Like(`%${busqueda}%`)
+                    titulo: Like(`%${busqueda}%`),
                 },
                     {
-                    descripcion: Like(`%${busqueda}%`)
-                }
-            ]
+                    descripcion: Like(`%${busqueda}%`),
+                },
+            ],
             };
 
             noticias = await this._noticiaService.buscar(consulta);
@@ -58,7 +71,8 @@ export class NoticiaController{
                 usuario: 'Adrian',
                 arreglo: noticias,
                 booleano: false,
-                mensaje: mensaje
+                mensaje: mensaje,
+                clase: clase,
             }
         );
     }
@@ -85,21 +99,34 @@ export class NoticiaController{
         @Res() response
     ) {
         response.render(
-            'crear-noticia'
+            'crear_noticia'
         )
     }
 
     @Post('crear-noticia')
     async crearNoticiaFuncion(
         @Res() response,
-        @Body() noticia: Noticia
+        @Body() noticia: Noticia,
     ) {
+        const objetoValidacionNoticia = new CreateNoticiaDto();
+        objetoValidacionNoticia.titulo = noticia.titulo;
+        objetoValidacionNoticia.descripcion = noticia.descripcion;
+        const errores: ValidationError[] = await  validate
+        (objetoValidacionNoticia);
+        const hayErrores = errores.length > 0;
+        if(hayErrores){
+            console.error(errores);
+        }else{
         const respuesta = await this._noticiaService.crear(noticia);
         console.log(respuesta);
+        const parametrosConsulta = `?accion=crear&titulo=${
+            noticia.titulo
+            }`;
 
         response.redirect(
-            '/noticia/inicio'
-        )
+            '/noticia/inicio' + parametrosConsulta,
+        );
+    }
     }
 
     @Get('actualizar-noticia/:idNoticia')
@@ -114,7 +141,7 @@ export class NoticiaController{
 
         response
             .render(
-                'crear-noticia',
+                'crear_noticia',
                 {
                     noticia: noticiaEncontrada
                 }
@@ -131,8 +158,11 @@ export class NoticiaController{
     ) {
         noticia.id = +idNoticia;
         await this._noticiaService.actualizar(noticia);
+        const parametrosConsulta = `?accion=actualizar&titulo=${
+            noticia.titulo
+            }`;
 
-        response.redirect('/noticia/inicio');
+        response.redirect('/noticia/inicio' + parametrosConsulta);
 
     }
 }

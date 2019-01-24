@@ -16,13 +16,13 @@ import {UsuarioModule} from "./Usuario/usario.module";
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
-      port: 32769,
+      port: 32781,
       username: 'miguel',
       password: '182025',
       database: 'web',
       // BDD Ya existe -> synchronized: false
       synchronize: true,
-      dropSchema: true, //borra la base y se vuelve a crear, buena idea para pruebas pero no para produccion
+      dropSchema: false, //borra la base y se vuelve a crear, buena idea para pruebas pero no para produccion
       entities: [
           NoticiaEntity,
           PaginaEntity,

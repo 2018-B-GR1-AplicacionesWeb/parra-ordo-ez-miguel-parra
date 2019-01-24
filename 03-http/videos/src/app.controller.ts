@@ -247,7 +247,7 @@ export class AppController {
     mostrarLogin(
         @Res() res
     ){
-        res.redirect('login')
+        res.render('login')
     }
 
     @Post('login')

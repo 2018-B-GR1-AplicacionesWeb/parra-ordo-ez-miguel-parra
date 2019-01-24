@@ -1,0 +1,52 @@
+<% const estaCreando = typeof auto=== "undefined"%>
+<% const existeMensaje = typeof mensaje !== "undefined"%>
+
+<% if(existeMensaje){ %>
+    <p>MENSAJE: <%= mensaje %></p>
+<% } %>
+<br>
+<br>
+<h1><%= estaCreando? 'Crea':'Actualizar'%> usuario</h1>
+
+<p><%= estaCreando? 'Crea':'Actualiza '%> un usuario</p>
+
+<form action="/usuario/<%= estaCreando? 'crear':'actualizar'%>-usuario/<%=estaCreando? '':usuario.id %>"
+      method="POST">
+    <div>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text"
+               value="<%= estaCreando ? '': usuario.nombre%>"
+        >
+    </div>
+    <br>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password"
+               value="<%= estaCreando ? '': usuario.password%>">
+    </div>
+    <br>
+    <div>
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email"
+               value="<%= estaCreando ? '': auto.correo%>">
+    </div>
+    <br>
+    <div>
+        <label for="edad">Edad</label>
+        <input id="edad" name="edad" type="text"
+               value="<%= estaCreando ? '': usuario.edad%>">
+    </div>
+    <br>
+    <div>
+        <label for="telefono">Telefono</label>
+        <input id="telefono" name="telefono" type="texto"
+               value="<%= estaCreando ? '': auto.telefono%>">
+    </div>
+    <br><br>
+
+    <button><%=estaCreando? 'Crear':'Actualizar'%> usuario</button>
+</form>
+
+<a href="/login">
+    <button>Regresar</button>
+</a>
